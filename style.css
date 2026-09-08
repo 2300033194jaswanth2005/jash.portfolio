@@ -6,7 +6,7 @@
     --primary-dark: #b8860b;
     --primary-light: #f7e7a9;
 
-    --bg: #050505;
+    --bg: #060505;
     --bg2: #14120d;
 
     --card: rgba(20, 18, 13, 0.75);
@@ -38,7 +38,8 @@ html {
 }
 
 body {
-    background:
+    
+    ground:
         radial-gradient(
             circle at top left,
             rgba(29, 78, 216, 0.35),
@@ -850,15 +851,26 @@ nav a.active::after {
 }
 
 .certificate-icon {
-    flex: 0 0 65px;
-    width: 65px;
-    height: 65px;
-    display: grid;
-    place-items: center;
-    border-radius: 18px;
-    background: rgba(250,204,21,.1);
-    color: var(--primary);
-    font-size: 1.8rem;
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 16px;
+    background: rgba(212, 170, 38, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.certificate-icon i {
+    font-size: 36px;
+}
+
+.certificate-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
 }
 
 .certificate-content h3 {
@@ -872,6 +884,7 @@ nav a.active::after {
     font-size: .88rem;
     margin-bottom: 14px;
 }
+
 
 .credential-note {
     color: var(--muted);

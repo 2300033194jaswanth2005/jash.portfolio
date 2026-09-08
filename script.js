@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (typeof Typed !== "undefined" && document.querySelector("#typing")) {
         new Typed("#typing", {
             strings: [
-                "Backend Developer",
+                "Full Stack Developer",
                 "Software Engineering Enthusiast",
                 "Java Developer",
                 "Cloud & DevOps Learner"
